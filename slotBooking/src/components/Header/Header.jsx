@@ -1,7 +1,7 @@
 
 import {Container, Stack, IconButton, Button,useMediaQuery } from '@mui/material';
 import Box from '@mui/material/Box';
- import Typography from '@mui/material/Typography';
+import Typography from '@mui/material/Typography';
 import logo from '../../assets/logo.png';
 import styles from './Header.module.css';
 import CloseIcon from "@mui/icons-material/Close";
@@ -11,10 +11,10 @@ import { useState} from 'react';
 
 const Header = () => {
   const isMobile = useMediaQuery("(max-width:900px)");
-  const[menuOpen, setMenuOpen] =useState(false);
+  const[menuOpen, setMenuOpen] = useState(false);
   return (
     <header>
-        <Box p={1} bgcolor='var(--color-primary)'>
+        <Box p={1} bgcolor='primary.main'>
           <Typography  textAlign="center"
           fontSize={{ md: 12, xs: 10 }}
           color="#ffff"
