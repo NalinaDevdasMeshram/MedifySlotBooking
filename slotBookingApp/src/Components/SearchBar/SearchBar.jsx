@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useMemo, useState } from "react"
 import { Button,Stack,TextField } from "@mui/material"
-import SearchIcon from '@mui/icons-material'
+import SearchIcon from '@mui/icons-material/Search'
 
 const SearchBar = ({list, filterList}) => {
     const [inputText, setInputText] = useState('')

@@ -10,6 +10,8 @@ import PatientCaring from "../Components/Section/PatientCaring/PatientCaring"
 import Blogs from "../Components/Section/Blogs/Blogs"
 import OurFamilies from "../Components/Section/OurFamilies/OurFamilies"
 import FAQs from "../Components/Section/FAQs/FAQs"
+// import DownloadApp from "../Components/Section/DownloadApp/DownloadApp"
+// import Footer from "../Components/Footer/Footer"
 
 const Home = () => {
   return (
@@ -43,6 +45,7 @@ const Home = () => {
          <Blogs/>
          <OurFamilies/>
          <FAQs/>
+         
          </Stack>
        </Container>
         </Box>

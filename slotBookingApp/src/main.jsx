@@ -2,11 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-// import Search from "./Search/Search";
+ import Search from "./Search/Search";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./Home/Home";
+import Home from './Home/Home'
 import { createTheme, ThemeProvider } from "@mui/material";
-// import MyBookings from "./MyBookings/MyBookings";
+import MyBooking from './MyBooking/MyBooking'
 
 const router = createBrowserRouter([
   {
@@ -15,15 +15,15 @@ const router = createBrowserRouter([
     children: [
       {
         path: "search",
-        // element: <Search />,
+         element: <Search />,
       },
       {
         path: "my-bookings",
-        // element: <MyBookings />,
+         element: <MyBooking />,
       },
       {
         path: "/",
-        element: <Home />,
+        element:<Home/>,
       },
     ],
   },
@@ -57,6 +57,7 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           width: "90%",
+          
         },
       },
     },
